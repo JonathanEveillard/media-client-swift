@@ -1,0 +1,36 @@
+# Xcode User Settings
+# Contains personal window layouts, open tabs, and breakpoints.
+# DO NOT ignore the entire .xcodeproj folder, only xcuserdata.
+xcuserdata/
+*.xcuserstate
+
+# Build Artifacts
+# Temporary build folders generated during compilation.
+build/
+DerivedData/
+
+# App Packaging & Diagnostics
+# Compiled apps, symbols, and crash logs should not be tracked.
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Playgrounds & Workspace details
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager (SPM)
+# Ignore the build directory. Checking in Package.resolved is optional 
+# depending on whether you want to lock dependency versions for your team.
+.build/
+
+# CocoaPods (Optional)
+# If using CocoaPods, it is generally recommended to keep the Pods/ directory 
+# out of git and let team members run 'pod install'.
+Pods/
+
+# macOS System Files
+# Automatically generated system metadata files.
+.DS_Store
+*.swp
+
