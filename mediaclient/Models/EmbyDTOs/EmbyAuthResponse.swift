@@ -5,10 +5,23 @@
 //  Created by Jonathan Eveillard on 2026-09-06.
 //
 
-// DTO response shape
-struct UserResponseDTOL: Codable {
+struct EmbyUser: Codable{
     let name: String
     let id: String
-    let type: String
-    let productionYear: Int?
+    
+    enum CodingKeys: String, CodingKey{
+        case name = "Name"
+        case id = "Id"
+    }
+}
+
+// DTO response shape
+struct EmbyAuthResponse: Codable {
+    let user: EmbyUser
+    let accessToken: String
+    
+    enum CodingKeys: String, CodingKey{
+        case user = "User"
+        case accessToken = "AccessToken"
+    }
 }

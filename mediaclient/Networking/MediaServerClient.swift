@@ -4,7 +4,7 @@
 //
 //  Created by Jonathan Eveillard on 2026-09-06.
 //
-
+import Foundation
 protocol MediaServerClient:AnyObject {
     
     func authenticate(username:String, password:String) async throws -> AuthResult
